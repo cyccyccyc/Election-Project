@@ -131,38 +131,43 @@ You may also want to set the top and bottom margins and padding
 */
 
 h1 {
-    font-size: 1em;
+    font-size: 1.8em;
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.6em;
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 h5 {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 h6 {
@@ -170,6 +175,7 @@ h6 {
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: purple;
 }
 
 
@@ -213,6 +219,10 @@ textarea {
 /* ==========================================================================
    Add your custom styles here
    ========================================================================== */
+
+body {
+    background-color: rgb(230, 230, 250, 0.5);
+}
 
 .candidateWrapper {
     float: left;
@@ -265,4 +275,49 @@ textarea {
 .photo {
     height: 50px;
     widht: 50px;
+}
+
+.main-content {
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    /*    padding: 5px;*/
+    color: deepskyblue;
+}
+
+a:hover {
+    /*
+    background-color: deepskyblue;
+    color: white;
+*/
+    /*    border-radius: 25px;*/
+    /*    font-weight: bold;*/
+    /*    padding: 5px;*/
+}
+
+ul,
+ol {
+    padding-top: px;
+    margin-top: 1px;
+}
+
+.nopaddingbottom {
+    padding-bottom: 0px;
+}
+
+.text-danger {
+    color: red;
+}
+
+footer {
+    text-align: center;
 }
