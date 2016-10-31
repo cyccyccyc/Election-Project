@@ -15,6 +15,7 @@
     width: 70%;
 }
 
+
 /* 
   ====================================
    These styles are page specific and you would need to change depending on how your page is laid out.
@@ -34,11 +35,6 @@
 
 .menu {
     clear: both;
-}
-
-.main-content {
-    clear: both;
-    float: none;
 }
 
 .main-content {

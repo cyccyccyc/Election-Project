@@ -220,6 +220,21 @@ textarea {
    Add your custom styles here
    ========================================================================== */
 
+
+/* Extra small devices (phones, less than 768px) */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 body {
     background-color: rgb(230, 230, 250, 0.5);
 }
@@ -277,12 +292,6 @@ body {
     widht: 50px;
 }
 
-.main-content {
-    padding-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 p {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -328,14 +337,28 @@ footer {
 }
 
 .quick-links {
+    /* remove browser default settings*/
     margin: 0px;
     padding: 0px;
     list-style: none;
+    /* negate .row settings */
+    /*margin-left: 15px;
+    margin-right: 15px;
+*/
+    width: 100%;
+    position: relative;
 }
 
-.quick-links a {
+.quick-links li {
+    width: 100%;
+    /* remove the line breaks before and after each list item */
+    display: inline;
+}
+
+.quick-links li a {
     display: block;
-    width: 120px;
+    text-decoration: none;
+    /*    width: 100%;*/
     height: 100px;
     margin-top: 7px;
     text-align: center;
@@ -351,6 +374,7 @@ footer {
     float: left;
     width: 100%;
     height: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -370,4 +394,43 @@ footer {
     padding-left: 20px;
     width: 85%;
     vertical-align: middle;
+}
+
+
+/* No media query since this is the default here */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .quick-links li {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .quick-links li {
+        width: 83.33%;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    .quick-links li {
+        width: 20%;
+    }
 }
