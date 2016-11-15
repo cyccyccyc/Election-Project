@@ -99,7 +99,7 @@ html {
     font-family: sans-serif;
     /*change to add a proper font stack */
     font-size: 1em;
-    line-height: 1;
+    line-height: 1.4;
     /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
 }
 
@@ -107,7 +107,7 @@ html {
 /*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
 
 p {
-    margin: 0 0 0 0;
+    margin: 0 0 1em 0;
 }
 
 
@@ -360,12 +360,13 @@ footer {
     text-decoration: none;
     /*    width: 100%;*/
     height: 100px;
-    margin-top: 7px;
+    line-height: 100px;
+/*    margin-top: 7px;*/
     text-align: center;
     vertical-align: middle;
     color: #3366ff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*    padding-top: 20px;*/
+/*    padding-bottom: 20px;*/
     background: #eeeeee;
     border: solid 1px #666666;
 }
@@ -434,3 +435,39 @@ footer {
         width: 20%;
     }
 }
+
+
+
+/*======================== Prof Stein ===========================*/
+
+footer{
+    clear:both;
+    background-color: darkblue;
+    color: white;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+.top-link{
+
+}
+
+li{
+    margin-bottom: 1em;
+}
+
+.primary{
+    clear:both;
+}
+
+.page-section{
+    clear:both;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.congress{
+    background-color: lightblue;
+    padding: 10px;
+    overflow:hidden;
+}
+
