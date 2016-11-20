@@ -927,6 +927,18 @@ footer {
 .clearing {
   clear: both; }
 
+/* The calendar is not suitable for small mobile devices*/
+.eventCalendar {
+  display: none; }
+
+.calendar-month {
+  height: 400px;
+  width: 100%; }
+
+.calendar-agenda {
+  height: 400px;
+  width: 100%; }
+
 /* No media query since this is the default here */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -937,7 +949,11 @@ footer {
     width: 100%; }
 
   .blockContainer .block {
-    width: 45%; } }
+    width: 45%; }
+
+  .eventCalendar {
+    display: inline;
+    width: 90%; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
@@ -947,7 +963,15 @@ footer {
     width: 83.33%; }
 
   .blockContainer .block {
-    width: 23%; } }
+    width: 23%; }
+
+  .calendar-month {
+    height: 400px;
+    width: 69%; }
+
+  .calendar-agenda {
+    height: 400px;
+    width: 29%; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {

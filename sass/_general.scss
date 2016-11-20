@@ -426,6 +426,23 @@ footer {
 }
 
 
+/* The calendar is not suitable for small mobile devices*/
+
+.eventCalendar {
+    display: none;
+}
+
+.calendar-month {
+    height: 400px;
+    width: 100%;
+}
+
+.calendar-agenda {
+    height: 400px;
+    width: 100%;
+}
+
+
 /* No media query since this is the default here */
 
 
@@ -441,6 +458,10 @@ footer {
     .blockContainer .block {
         width: 45%;
     }
+    .eventCalendar {
+        display: inline;
+        width: 90%;
+    }
 }
 
 
@@ -455,6 +476,14 @@ footer {
     }
     .blockContainer .block {
         width: 23%;
+    }
+    .calendar-month {
+        height: 400px;
+        width: 69%;
+    }
+    .calendar-agenda {
+        height: 400px;
+        width: 29%;
     }
 }
 
