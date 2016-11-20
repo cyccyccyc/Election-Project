@@ -397,6 +397,34 @@ footer {
     vertical-align: middle;
 }
 
+.blockContainer {
+    overflow: hidden;
+    /* will not need clearing style */
+}
+
+.blockContainer .block {
+    float: left;
+    width: 95%;
+    /* need to change this according to screen width size */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.borderbox {
+    text-align: center;
+    vertical-align: middle;
+    color: #3366ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #eeeeee;
+    border: solid 1px #666666;
+}
+
+.clearing {
+    clear: both;
+}
+
 
 /* No media query since this is the default here */
 
@@ -410,6 +438,9 @@ footer {
     .quick-links li {
         width: 100%;
     }
+    .blockContainer .block {
+        width: 45%;
+    }
 }
 
 
@@ -422,6 +453,9 @@ footer {
     .quick-links li {
         width: 83.33%;
     }
+    .blockContainer .block {
+        width: 23%;
+    }
 }
 
 
@@ -433,6 +467,9 @@ footer {
     }
     .quick-links li {
         width: 20%;
+    }
+    .blockContainer .block {
+        width: 18%;
     }
 }
 
